@@ -12,6 +12,7 @@
     ```sh
     $ ./run.sh
     ```
+2. Run Script with desire language-code    
     ```sh
     $ python3 Scripts/translate_tags.py lan-code inputfile 
 
