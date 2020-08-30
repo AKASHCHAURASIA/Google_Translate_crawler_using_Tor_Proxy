@@ -1,0 +1,15 @@
+this is testing tag,यह परीक्षण टैग है
+hello world,नमस्ते दुनिया
+love,प्रेम
+pyaar,प्यार
+boyfriend,प्रेमी
+happy,प्रसन्न
+relationship,संबंध
+jaan,जनवरी
+jaanu,जानें
+janu,जानू
+flower,फूल
+wish,तमन्ना
+anniversary,सालगिरह
+sad,उदास
+breakup,संबंध विच्छेद

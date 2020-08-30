@@ -5,15 +5,9 @@ from googletrans.gtoken import TokenAcquirer
 from time import sleep
 import sys
 def func(l):
-    #ua = UserAgent()
-    #user_agent = ua.random
-    #headers = {'user-agent': user_agent,}
+    
     dic = {}
-    #translator = Translator(service_urls=None, user_agent=user_agent, proxies=None, timeout=None)
-    #res = translator.translate(l, dest='hi')
-    #for i in res:
-        #dic[i.origin] = i.text
-    #return dic
+    
     proxies = {'http': 'socks5://127.0.0.1:9150','https': 'socks5://127.0.0.1:9150'}
     name=sys.argv[2].split('.')
     name=name[0]
@@ -21,7 +15,7 @@ def func(l):
     for i in l:
         csv=''
         
-        f=open(name+"_"+sys.argv[1]+"_tags.csv","a")
+        f=open("Data/"+name+"_"+sys.argv[1]+"_tags.csv","a")
 
 
         try:
@@ -65,32 +59,8 @@ with open(sys.argv[2], 'r') as f:
             a = i.replace('"', '')
             l.append(a)
 
-            #dict[a] = func(a, 'hi')
-            #count = count + 1
-            #print(count)
-            #except:
-                #print('Bad news')
-                #ex_dict[a] = []
-name=sys.argv[2].split(".")
+            name=sys.argv[2].split(".")
 name=name[0]
-f=open("ab.txt","w")
 d={}
 
 d=func(l)
-'''
-for i in d:
-    csv=''
-    csv = i.strip()+','
-    temp = d[i]
-    csv = csv + temp
-    f.write(csv.encode('utf-8') +'\n')
-
-
-
-print(len(dict))
-print(len(ex_dict))
-
-with open('hi_tags.csv', 'w') as f:
-    csv = ''
-    for i in dict:
-        f.write(dict[i]+'\n')'''
